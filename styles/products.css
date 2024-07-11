@@ -122,12 +122,43 @@ ul li{
 
 .product-information{
     display: flex;
-    /* align-items: center; */
     gap: 120px;
     margin-bottom: 100px;
 }
 
-.product-information h3{
+.information_product {
+    gap: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.information_product span{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.information_product .old_price{
+    text-decoration: line-through;
+    color: rgba(164, 164, 164, 1);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26.25px;
+    text-align: left;
+
+}
+
+.information_product h5{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.64px;
+    text-align: left;
+    color: rgba(22, 28, 36, 1);
+}
+
+.information_product h1{
     font-size: 44px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -136,8 +167,7 @@ ul li{
     text-align: left;
     color: rgba(22, 28, 36, 1);
 }
-
-.product-information #text{
+.information_product p{
     color: rgba(69, 79, 91, 1);
     font-size: 14px;
     width: 290px;
@@ -147,7 +177,7 @@ ul li{
     text-align: left;
 }
 
-.product-information button{
+.information_product button{
     width: 220px;
     height: 50px;
     cursor: pointer;
@@ -155,4 +185,8 @@ ul li{
     background-color: rgba(66, 149, 228, 1);
     color: #fff;
     margin-top: 30px;
+}
+
+.information_product button:hover{
+    background-color: #1b2c99;
 }

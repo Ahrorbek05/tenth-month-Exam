@@ -11,15 +11,15 @@ async function getData(url){
 function createProduct(){
   return `
   <div class="product-image">
-  <img src="${common.image}" alt="" width="600" height="600">
+  <img src="${product.image}" alt="" width="600" height="600">
 </div>
 <div class="product-info">
- <h3>${common.name} <br> 
+ <h3>${product.name} <br> 
   GS-200Z-5 для офиса</h3>
   <p id="text">Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые формы.</p>
   <p id="text">Подходит для установки на деревянную/межкомнатную дверь.</p>
   <h4>Цена</h4>
-  <p>${common.newPrice}<span>;${common.oldPrice}</span></p>
+  <p>${product.newPrice}<span>;${product.oldPrice}</span></p>
   <button>КОРЗИНКА</button>
   `;
 }
