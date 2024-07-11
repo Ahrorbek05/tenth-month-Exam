@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/cart.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+          <div class="container main__container">
+            <p>Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+            <a href="#">Обратный звонок</a>
+          </div>
+        </div>
+        <div class="container header__container">
+          <div class="navigation-header">
+            <div class="logo">
+              <a href="#">
+                <img
+                  src="../images/logotip.svg"
+                  alt="logotip"
+                  width="50.4"
+                  height="42"
+                />
+              </a>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li>
+                  <a href="#">Каталог</a>
+                  <img src="../images/vector.svg" alt="vector" />
+                </li>
+                <li><a href="#">Оптовая продажа</a></li>
+                <li><a href="#">О нас</a></li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <span>
+                <i class="fa-solid fa-phone"></i>
+                <a href="+7 (966) 55 88 499">+7 (966) 55 88 499</a>
+                <span class="like">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <div class="cart">
+        <h2>Корзина</h2>
+        <div class="cart-item">
+            <div class="cart-item__image">
+                <img src="../images/lock-door.png" alt="Дверной Замок Golden Soft для офиса">
+            </div>
+            <div class="cart-item__details">
+                <p>Дверной Замок Golden Soft для офиса</p>
+                <p class="gift">+ Подарок: <a href="#">Приложение к замкам Golden Service</a></p>
+                <div class="quantity">
+                    <button class="quantity__button">-</button>
+                    <input type="text" class="quantity__input" value="2">
+                    <button class="quantity__button">+</button>
+                </div>
+                <p class="price">33 000₽</p>
+            </div>
+            <div class="cart-item__actions">
+                <button class="remove-item">Удалить</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <p>Итого: <span class="total-price">66 000₽</span></p>
+            <button class="checkout-button">Оформить заказ</button>
+            <button class="continue-shopping-button">Продолжить покупки</button>
+        </div>
+    </div>
+</body>
+</html>
+

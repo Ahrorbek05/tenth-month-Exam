@@ -130,6 +130,9 @@ ul li{
 .filter{
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .filter p{
@@ -138,6 +141,11 @@ ul li{
     position: absolute;
     left: 320px;
     align-items: center;
+}
+
+.filter input{
+    width: 100px;
+    height: 40px;
 }
 
 .filter p i{
@@ -624,6 +632,11 @@ ul li{
 
 .footer__column p{
     margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(196, 205, 213, 1);
 }
 
 .footer__column ul {

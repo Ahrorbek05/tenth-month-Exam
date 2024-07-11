@@ -1,5 +1,21 @@
 import { getData, createCard, createProduct} from "../javascript/function.js";
 
+document.getElementById('filter-btn').addEventListener('click', function() {
+    let minPrice = parseInt(document.getElementById('min-price').value) || 0;
+    let maxPrice = parseInt(document.getElementById('max-price').value) || Infinity;
+
+    let products = document.querySelectorAll('.collection-products .card-hero');
+    products.forEach(function(product) {
+        let productPrice = parseInt(product.getAttribute('data-price'));
+        if (productPrice >= minPrice && productPrice <= maxPrice) {
+            product.style.display = 'block';
+        } else {
+            // product.style.display = 'none';
+        }
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", async function () {
   const wrap = document.querySelector(".collection-products");
   const select = document.querySelector("#select");
