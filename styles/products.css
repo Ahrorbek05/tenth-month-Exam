@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+.container{
+    max-width: 1245px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    box-shadow: 0px -1px 0px 0px rgba(196, 205, 213, 1) inset;
+    padding-bottom: 25px;
+    margin-bottom: 100px;
+}
+
+.main__container{
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+}
+
+.main-header{
+    padding-bottom: 30px;
+    padding-top: 10px;
+    background-color: #454F5B;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header p{
+    position: absolute;
+    top: 0px;
+    left: 420px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #fff;
+}
+
+.main-header a{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    color: #fff;
+}
+
+.section__container h1{
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+}
+
+.section__container span{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+}
+
+.navigation-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.87px;
+    font-family: system-ui;
+    color: rgba(22, 28, 36, 1);
+
+}
+
+ul li{
+    list-style: none;
+}
+
+.contacts span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts .fa-phone{
+    color: blue;
+}
+
+.contacts i{
+    cursor: pointer;
+}
+
+.contacts i:hover{
+    color: red;
+    transition: all 0.2s ease-out;
+}
+
+.contacts a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.48px;
+    text-align: left;
+    color: rgba(69, 79, 91, 1);
+}
+
+.product-information{
+    display: flex;
+    /* align-items: center; */
+    gap: 120px;
+}
+
+.product-information h3{
+    font-size: 44px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: left;
+    color: rgba(22, 28, 36, 1);
+}
+
+.product-information #text{
+    color: rgba(69, 79, 91, 1);
+    font-size: 14px;
+    width: 290px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.product-information button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(66, 149, 228, 1);
+    color: #fff;
+    margin-top: 30px;
+}

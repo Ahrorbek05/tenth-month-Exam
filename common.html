@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <title>tenth-month Exam</title>
+  </head>
+  <body>
+    <!-- ------ HEADER ------ -->
+    <header class="header">
+      <div class="main-header">
+        <div class="container main__container">
+          <p>Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+          <a href="#">Обратный звонок</a>
+        </div>
+      </div>
+      <div class="container header__container">
+        <div class="navigation-header">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="./images/logotip.svg"
+                alt="logotip"
+                width="50.4"
+                height="42"
+              />
+            </a>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li>
+                <a href="#">Каталог</a>
+                <img src="./images/vector.svg" alt="vector" />
+              </li>
+              <li><a href="#">Оптовая продажа</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              <a href="+7 (966) 55 88 499">+7 (966) 55 88 499</a>
+              <span class="like">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ------SECTION ------ -->
+    <section class="section">
+      <div class="container section__container">
+        <h1>Накладные электронные замки <span>(854)</span></h1>
+        <div class="elements">
+          <div class="filter">
+            <button>Сбросить фильтры</button>
+            <p>Электронные кодовые замки <i class="fa-solid fa-xmark"></i></p>
+          </div>
+          <div class="popup">
+            <select id="select">
+              <option value="Популярности">Популярности</option>
+              <option value="Дешевый">Дешевый</option>
+              <option value="Качественные">Качественные</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-page">
+          <div class="container collection__container">
+            <div class="filter-price">
+              <div class="filter-text">
+                <h3>Фильтр</h3>
+                <div>
+                  <h4>
+                    Цена <img src="./images/arrow-up.svg" alt="arrow icon" />
+                  </h4>
+                  <span>
+                    <h5>79 000₽</h5>
+                    <h5>24 500₽</h5>
+                  </span>
+                  <button>От 3000₽ до 9000₽</button>
+                  <button>От 9000₽ до 20000₽</button>
+                  <button>От 20000₽ до 45000₽</button>
+                  <button>От 45000₽ до 60000₽</button>
+                  <button>От 60000₽ до 79000₽</button>
+                </div>
+              </div>
+            </div>
+            <div class="collection-products">
+              <!-- <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-square-xmark"></i>Нет в наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img class="img" src="./images/lock-door.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">7 000₽</span
+                    ><span class="skidka">8 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/two-lock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">33 000₽</span
+                    ><span class="skidka">30 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/twoo-clock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span class="otviz">(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">9 000₽</span
+                    ><span class="skidka">12 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-square-xmark"></i>Нет в наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/lock-door.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">7 000₽</span
+                    ><span class="skidka">8 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/two-lock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">33 000₽</span
+                    ><span class="skidka">30 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/twoo-clock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">9 000₽</span
+                    ><span class="skidka">12 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-square-xmark"></i>Нет в наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/lock-door.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">7 000₽</span
+                    ><span class="skidka">8 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/two-lock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">33 000₽</span
+                    ><span class="skidka">30 000₽</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="card-hero">
+                <div class="box">
+                  <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                </div>
+                <span class="baza"
+                  ><i class="fa-solid fa-check"></i> B наличии</span
+                >
+                <span class="sale">SALE</span>
+                <img src="./images/twoo-clock.png" alt="lock door" />
+                <div class="card-prod">
+                  <span>
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/starto.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                    <img src="./images/star-icon.svg" alt="star-icon" />
+                  </span>
+                  <span>(12) отзывов</span>
+                  <p>Вариативный замок Golden Soft для отеля</p>
+                  <span class="price"
+                    ><span class="old">9 000₽</span
+                    ><span class="skidka">12 000₽</span></span
+                  >
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-section">
+      <div class="container two__container">
+        <div class="many-purchases">
+          <h2>Вы недавно просмотрели</h2>
+          <div class="card">
+            <div class="card-hero">
+              <div class="box">
+                <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+              </div>
+              <span class="baza"
+              ><i class="fa-solid fa-check"></i> B наличии</span
+            >
+            <span class="sale">SALE</span>
+              <img src="./images/new-lock.png" alt="lock door" />
+              <div class="card-prod">
+                <span>
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                </span>
+                <span>(12) отзывов</span>
+                <p>Вариативный замок Golden Soft для отеля</p>
+                <span class="price"
+                  >33 000₽ <span class="skidka">30 000₽</span></span
+                >
+              </div>
+            </div>
+
+            <div class="card-hero">
+              <span class="sale">SALE</span>
+              <div class="box">
+                <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+              </div>
+              <img src="./images/lock-door.png" alt="lock door" />
+              <div class="card-prod">
+                <span>
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                </span>
+                <span>(12) отзывов</span>
+                <p>Вариативный замок Golden Soft для отеля</p>
+                <span class="price"
+                  >7 000₽ <span class="skidka">8 000₽</span></span
+                >
+                <span class="baza"
+                  ><i class="fa-solid fa-square-xmark"></i>Нет в наличии</span
+                >
+              </div>
+            </div>
+
+            <div class="card-hero">
+              <div class="box">
+                <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+              </div>
+              <span class="baza"
+              ><i class="fa-solid fa-check"></i> B наличии</span
+            >
+            <span class="sale">SALE</span>
+              <img src="./images/two-lock.png" alt="lock door" />
+              <div class="card-prod">
+                <span>
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                </span>
+                <span>(12) отзывов</span>
+                <p>Вариативный замок Golden Soft для отеля</p>
+                <span class="price"
+                  >33 000₽ <span class="skidka">30 000₽</span></span
+                >
+              </div>
+            </div>
+
+            <div class="card-hero">
+              <div class="box">
+                <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+              </div>
+              <span class="baza"
+              ><i class="fa-solid fa-check"></i> B наличии</span
+            >
+            <span class="sale">SALE</span>
+              <img src="./images/twoo-clock.png" alt="lock door" />
+              <div class="card-prod">
+                <span>
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/starto.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                  <img src="./images/star-icon.svg" alt="star-icon" />
+                </span>
+                <span>(12) отзывов</span>
+                <p>Вариативный замок Golden Soft для отеля</p>
+                <span class="price"
+                  >9 000₽ <span class="skidka">12 000₽</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ceo">
+          <div class="ceo-page">
+            <div class="ceo-text">
+              <h3>Eget quis quam metus, scelerisque.</h3>
+              <p id="text">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <div class="checkbox">
+              </div>
+              <p class="text-second">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+            <div class="ceo-picture">
+              <img src="./images/ceo-image.png" alt="ceo picture" width="605" height="564">
+            </div>
+          </div>
+          <div class="ceo-page-two">
+            <div class="pic">
+              <img src="./images/ceo-two.png" alt="ceo" width="605" height="564">
+            </div>
+            <div class="info">
+              <h3>Eget quis quam metus, scelerisque.</h3>
+              <p id="text-tw">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <p id="text-second-tw">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="from-registration">
+      <h3>Мы Вам перезвоним</h3>
+      <p>Если у вас возникли какие-то вопросы или проблемы, заполните <br> форму и мы Вам перезвоним.</p>
+      <span>
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Ваш Email">
+        <button>Отправить</button>
+      </span>
+    </div>
+
+    <!-- ------ FOOTER ------ -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logos-page"></div>
+        <div class="Navigations-page"></div>
+        <div class="contact-page"></div>
+        <div class="addres-page"></div>
+        <div class="information-page"></div>
+      </div>
+    </footer>
+
+    <script src="./javascript/common.js" type="module"></script>
+  </body>
+</html>
