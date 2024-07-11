@@ -1,4 +1,4 @@
-import { getData, createCard } from "../javascript/function.js";
+import { getData, createCard, createProduct } from "../javascript/function.js";
 
 document.addEventListener('DOMContentLoaded', async function() {
     const wrap = document.querySelector('.collection-products');
@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
 
         const cards = document.querySelectorAll('.card-hero');
-        console.log(cards);
         cards.forEach(el => {
             el.addEventListener('click', function(event) {
                 window.location.assign(`http://127.0.0.1:5500/pages/products.html?id=${el.id}`);

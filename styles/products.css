@@ -124,6 +124,7 @@ ul li{
     display: flex;
     /* align-items: center; */
     gap: 120px;
+    margin-bottom: 100px;
 }
 
 .product-information h3{

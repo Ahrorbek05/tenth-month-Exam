@@ -56,4 +56,13 @@ function createCard(common) {
 
 }
 
-export {getData, createCard, createProduct}
+function getDataStroge(){
+  let data = [];
+  if(localStorage.getItem('products')){
+      data = JSON.parse(localStorage.getItem('products'))
+  }
+  return data
+}
+
+
+export {getData, createCard, createProduct, getDataStroge}

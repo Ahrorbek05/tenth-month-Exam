@@ -1,70 +1,80 @@
-import { createProduct } from "../javascript/function.js";
+import { createProduct, getData, getDataStorage } from "./function.js";
 
-const details = document.getElementById('details');
-const prod = document.getElementById('product');
+async function getUrl(url) {
+    try {
+        let response = await fetch(url);
+        let res = await response.json();
+        return res;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return null;
+    }
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-    let url = window.location.href;
-    let id = url.split('id=')[1];
+function createCard(){
+    return `
+    <div class="product-image">
+    <img src="${product.image}" alt="" width="600" height="600">
+  </div>
+  <div class="product-info">
+   <h3>${product.name} <br> 
+    GS-200Z-5 для офиса</h3>
+    <p id="text">Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые формы.</p>
+    <p id="text">Подходит для установки на деревянную/межкомнатную дверь.</p>
+    <h4>Цена</h4>
+    <p>${product.newPrice}<span>;${product.oldPrice}</span></p>
+    <button>КОРЗИНКА</button>
+    `;
+  }
 
-    if(!id){
-        window.location.assign('http://127.0.0.1:5500/index.html');
+function getStoredProducts() {
+    let products = localStorage.getItem("products");
+    return products ? JSON.parse(products) : [];
+}
+
+function saveProductToStorage(product) {
+    let products = getStoredProducts();
+    let confirm = products.some(el => el.id === product.id);
+    if (!confirm) {
+        products.push(product);
+        localStorage.setItem("products", JSON.stringify(products));
+        alert("Успешно сохранено");
+    } else {
+        alert("Такой продукт уже существует");
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let url = new URL(window.location.href);
+    let id = url.searchParams.get("id");
+    if (!id) {
+        window.location.assign("http://127.0.0.1:5500/#");
         return;
     }
 
-    getData(`https://strapi-store-server.onrender.com/api/products/${id}`)
-    .then(data =>{
-        if(data.data.id){
-            const card = createDetails(data.data);
-            details.innerHTML = card;
-
-            const form = document.getElementById('form');
-           const button = document.querySelector('.button')
-            const select = document.getElementById('select');
-
-            form.addEventListener('submit', function(event){
-                event.preventDefault();
-                let product = {
-                    id: data.data.id,
-                    time: Date.now(),
-                    count: select.value * 1,
-                    attribute: data.data.attributes
-                }
-                let products = getDataStroge();
-                let isExist = products.find(element => {
-                    return element.id ==  product.id
-                })
-                if( isExist && isExist.id){
-                    products = products.map(element =>{
-                        if(element.id === product.id){
-                            element.count += product.count
-                        }
-                        return element;
-                    })
-                } else {
-                    products.push(product)
-                }
-                localStorage.setItem('products', JSON.stringify(products));
-            })
-
-            button.addEventListener('click', function(){
-              window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}`) 
-            })
-
-            prod.addEventListener('click', function(){
-                window.location.assign(`http://127.0.0.1:5500/index.html?id=${id}`)
-            })
-
-
-
-        } else {
-            details.innerHTML = 'Bunday mahsulot mavjud emas!';  
-        }
-    })
-    .catch(err =>{
-        console.log(err);
-    })
-    .finally(function(){
-        loader.style.display = 'none';
-    })
-})
+    getUrl("https://cars-pagination.onrender.com/products/" + id)
+        .then((data) => {
+            if (data && data.id) {
+                const card = createCard(data);
+                document.querySelector(".product-information").innerHTML = card;
+                document.querySelector(".loader").style.display = "none";
+                const button = document.querySelector(".button");
+                button.addEventListener("click", function () {
+                    saveProductToStorage({
+                        id: data.id,
+                        name: data.name,
+                        newPrice: data.newPrice,
+                        oldPrice: data.oldPrice,
+                        image: data.image,
+                        time: Date.now(),
+                    });
+                    window.location.assign("http://127.0.0.1:5500/pages/cart.html");
+                });
+            } else {
+                document.querySelector(".product-information").innerHTML = "Продукт не найден.";
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+});
