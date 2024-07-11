@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         el.addEventListener('click',function(event){
           const cardId = this.getAttribute("data-id");
   if (cardId) {
-    window.location.assign(`http://127.0.0.1:5500/pages/products.html?id=${cardId}`);
+    window.location.assign(`https://tenth-month-exam.vercel.app//pages/products.html?id=${cardId}`);
   }
           createProduct(this)
-        window.location.assign("http://127.0.0.1:5500/pages/products.html")
+        window.location.assign("https://tenth-month-exam.vercel.app//pages/products.html")
         })
     });
     
