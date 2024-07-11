@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let id = url.split("id=")[1];
   console.log(id);
   if (!id) {
-    window.location.assign(`https://tenth-month-exam.vercel.app//common.html`);
+    window.location.assign(`https://tenth-month-exam.vercel.app/`);
     return;
   }
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image: data.image,
             time: Date.now(),
           });
-          window.location.assign(`https://tenth-month-exam.vercel.app//pages/cart.html`);
+          window.location.assign(`https://tenth-month-exam.vercel.app/`);
         });
         // loader.style.display = "none";
       } else {
