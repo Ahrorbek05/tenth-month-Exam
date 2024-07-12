@@ -1,7 +1,7 @@
 import { getData } from "../javascript/function.js";
 
 const wrapper = document.querySelector(".product-information");
-// const loader = document.querySelector(".loader");
+const loader = document.querySelector(".loader");
 
 function getStoredProducts() {
   let products = localStorage.getItem("products");
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
           window.location.assign(`http://127.0.0.1:5500/pages/cart.html`);
         });
-        // loader.style.display = "none";
+        loader.style.display = "none";
       } else {
         wrapper.innerHTML = "Bunday mahsulot topilmadi.";
       }
